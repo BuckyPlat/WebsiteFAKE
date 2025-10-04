@@ -1,0 +1,113 @@
+header{
+    width: 100%;
+    height: 300px;
+    background-image: url("https://pbs.twimg.com/media/GOgsdZIXMAAzEKr?format=jpg&name=large");
+    background-size: cover;         
+    background-position: center;  
+    background-repeat: no-repeat;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    background: #2a2a2a;
+    padding: 10px 0 10px;
+    margin: 0;
+    gap: 10px;
+    justify-content: center;
+    border-bottom: #cd0000 3px solid;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 18px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 5px;
+}
+nav ul li a:hover{
+    color:  #2a2a2a;
+    background: #cd0000;
+    border-radius: 5px;
+    text-decoration: none;
+}
+nav ul li{
+    position: relative;
+}
+nav ul .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background:  #2a2a2a;
+    border-radius: 5px;
+    padding: 5px;
+    min-width: 120px;
+}
+nav ul li:hover > .submenu {
+    display: block; 
+}
+nav ul .submenu li a {
+    color: white;
+    padding: 8px 16px;
+    display: block;
+    border-radius: 5px;
+    text-decoration: none;
+}
+nav ul .submenu li a:hover {
+    background:  #cd0000;
+    color:  #2a2a2a;
+}
+.content {
+    display: flex;
+    margin: 0px;
+    gap: 20px;
+}
+.content-row {
+display: flex;
+align-items: flex-start; 
+gap: 20px; 
+margin-top: 20px;
+}
+
+.content-row .text {
+flex: 1; 
+}
+
+.content-row .image img {
+max-width: 400px; 
+height: auto;
+border-radius: 8px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+sidebar {
+    flex: 1; 
+    background-image: url("https://pbs.twimg.com/media/GmpGTsxWEAATfqf?format=jpg&name=medium");
+    padding: 10px;
+    margin: 0;
+}
+main {
+    flex: 3;
+    background: #ffffff;
+    padding: 20px;
+}
+main h1 {
+    color: #cd0000;
+}
+main h4{
+    border-left: #cd0000 5px solid;
+    padding-left: 5px;
+}
+aside {
+    flex: 1;
+    background-image: url("https://pbs.twimg.com/media/GPT0qj-XIAAMomo?format=jpg&name=medium");
+    padding: 10px;
+    margin: 0;
+}
+sidebar, aside {
+    width: 100%;             
+    height: 700px;           
+    background-size: cover;  
+    background-repeat: no-repeat; 
+    background-position: center;
+    border-radius: 8px;    
+}

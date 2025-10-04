@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Form Đăng Ký</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+    }
+    .form-box {
+      width: 300px;
+      margin: 30px auto;
+      background: white;
+      padding: 50px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px gray;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+      color: darkorange;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    textarea {
+      resize: none;
+      height: 60px;
+    }
+    button {
+      margin-top: 15px;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 20px;
+      background: linear-gradient(to right, orange, blue);
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+<div class="form-box">
+  <label>Họ và tên thí sinh</label>
+  <input type="text" placeholder="Nhập họ tên">
+
+  <label>Người liên hệ</label>
+  <input type="text" placeholder="Tên phụ huynh hoặc người bảo trợ">
+
+  <label>Email</label>
+  <input type="email" placeholder="abc@gmail.com">
+
+  <label>Số điện thoại</label>
+  <input type="text" placeholder="09xx xxx xxx">
+
+  <label>Cơ sở mong muốn</label>
+  <select>
+    <option>Hà Nội</option>
+    <option>Hồ Chí Minh</option>
+    <option>Đà Nẵng</option>
+  </select>
+
+  <label>Ngành học quan tâm</label>
+  <textarea placeholder="VD: Digital Marketing, Lập trình Mobile"></textarea>
+
+  <button>Đăng ký ngay</button>
+</div>
+
+</body>
+</html>
