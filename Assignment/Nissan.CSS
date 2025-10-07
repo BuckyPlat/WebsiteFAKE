@@ -78,6 +78,8 @@ max-width: 400px;
 height: auto;
 border-radius: 8px;
 box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+display: block;
+margin-bottom: 15px;
 }
 sidebar {
     flex: 1; 
@@ -110,4 +112,44 @@ sidebar, aside {
     background-repeat: no-repeat; 
     background-position: center;
     border-radius: 8px;    
+}
+.form-box {
+    width: 500px;
+    margin: 30px auto;
+    background:#2a2a2a;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px gray;
+}
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+textarea {
+    resize: none;
+    height: 60px;
+}
+button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background: #cd0000;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover {
+    color: #cd0000;
+    background: white;
 }
