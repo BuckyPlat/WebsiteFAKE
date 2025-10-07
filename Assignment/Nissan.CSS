@@ -100,6 +100,11 @@ main h4{
     border-left: #cd0000 5px solid;
     padding-left: 5px;
 }
+
+main h3{
+    border-left: #cd0000 5px solid;
+    padding-left: 5px;
+}
 aside {
     flex: 1;
     background-image: url("https://pbs.twimg.com/media/GPT0qj-XIAAMomo?format=jpg&name=medium");
