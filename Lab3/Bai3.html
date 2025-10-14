@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sản phẩm Langfarm - Demo</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; scroll-behavior: smooth; }
+
+    h3 {
+      margin: 20px;
+    }
+
+    /* Product container */
+    .product-list {
+      display: flex;
+      gap: 15px;
+      overflow-x: auto;
+      padding: 20px;
+    }
+
+    .product {
+      position: relative; /* allows badge positioning */
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 220px;
+      flex-shrink: 0;
+      background: #fff;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    .product img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* “Bán chạy” badge */
+    .badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #ff4500;
+      color: white;
+      font-size: 12px;
+      padding: 3px 6px;
+      border-radius: 5px;
+      z-index: 2; /* makes sure it’s above the image */
+    }
+
+    .info {
+      padding: 10px;
+    }
+
+    .info h4 {
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+
+    .info p {
+      font-size: 12px;
+      color: gray;
+      margin-bottom: 4px;
+    }
+
+    .price {
+      color: #000;
+      font-weight: bold;
+    }
+
+    /* Scroll to top button */
+    .scroll-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 35px;
+      height: 35px;
+      background: orange;
+      border-radius: 50%;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+
+    /* Optional hover effect */
+    .scroll-top:hover {
+      background: #ff6500;
+    }
+  </style>
+</head>
+<body>
+  <!-- Product Section -->
+  <div class="product-list">
+    <div class="product">
+      <div class="badge">Bán chạy</div>
+      <img src="https://via.placeholder.com/200x150.png?text=Biscotti" alt="Bánh biscotti">
+      <div class="info">
+        <h4>Bánh biscotti nông sản Đà Lạt</h4>
+        <p>Hộp rứa 260g</p>
+        <div class="price">113,000đ</div>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/200x150.png?text=Cookie" alt="Cookie macaron">
+      <div class="info">
+        <h4>Bánh cookie macaron Đà Lạt</h4>
+        <p>Hũ tobitab 80g</p>
+        <div class="price">102,000đ</div>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/200x150.png?text=Flan" alt="Bánh flan">
+      <div class="info">
+        <h4>Bánh flan yến sấy thăng hoa</h4>
+        <p>Hộp pillow 2 bánh</p>
+        <div class="price">88,000đ</div>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/200x150.png?text=Trà+Đà+Lạt" alt="Trà Đà Lạt">
+      <div class="info">
+        <h4>Trà ô long Đà Lạt</h4>
+        <p>Hộp 200g</p>
+        <div class="price">95,000đ</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll-to-top button -->
+  <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</button>
+
+</body>
+</html>

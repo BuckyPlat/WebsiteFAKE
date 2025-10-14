@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Menu with Dropdown (Fixed)</title>
+  <style>
+    /* Reset */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body { font-family: Arial, sans-serif; }
+
+    /* Navbar container - allow visible overflow so dropdown can show */
+    .navbar {
+      background-color: #0a1a33; /* dark blue */
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      padding: 8px 12px;
+      overflow: visible; /* important: let absolute dropdowns show */
+    }
+
+    /* Main menu items and dropdown button */
+    .navbar a,
+    .dropdown .dropbtn {
+      color: white;
+      padding: 10px 14px;
+      text-decoration: none;
+      display: block;      /* makes entire area clickable */
+      font-size: 16px;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+
+    .navbar a:hover,
+    .dropdown:hover .dropbtn {
+      background-color: #1e3c66;
+    }
+
+    /* Dropdown wrapper (positioned relative so child absolute uses it) */
+    .dropdown {
+      position: relative;
+    }
+
+    /* Hidden by default */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;           /* right below the navbar */
+      left: 0;
+      min-width: 160px;
+      background-color: #0a1a33;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+      z-index: 999;        /* make sure it sits above other elements */
+      border-radius: 6px;
+      margin-top: 6px;
+      overflow: hidden;
+    }
+
+    /* Dropdown links */
+    .dropdown-content a {
+      color: white;
+      padding: 10px 14px;
+      text-decoration: none;
+      display: block;
+      font-size: 14px;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #1e3c66;
+    }
+
+    /* Show when hovering the dropdown container */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* small screen friendly: allow horizontal scrolling rather than wrapping weirdly */
+    @media (max-width: 520px) {
+      .navbar { overflow-x: auto; justify-content: flex-start; padding: 8px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="#">Trang chủ</a>
+    <a href="#">Sản phẩm</a>
+
+    <div class="dropdown">
+      <a href="#" class="dropbtn">Dịch vụ ▾</a>
+      <div class="dropdown-content" aria-label="submenu">
+        <a href="#">Thiết kế logo</a>
+        <a href="#">In ấn</a>
+        <a href="#">Bảo hành</a>
+      </div>
+    </div>
+
+    <a href="#">Blog</a>
+    <a href="#">Liên hệ</a>
+  </div>
+
+</body>
+</html>
