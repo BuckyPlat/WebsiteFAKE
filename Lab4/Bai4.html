@@ -1,113 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Best-Loved Packages</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 0;
-    background-color: #fff;
-  }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best-Loved Packages</title>
+  <style>
+    :root {
+      --card-bg: #fff;
+      --border: #ddd;
+      --button-bg: #2e6b2e;
+      --button-hover: #245724;
+      --text: #333;
+    }
 
-  h2 {
-    margin-top: 30px;
-    letter-spacing: 1px;
-  }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
 
-  .packages {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin: 30px auto;
-    max-width: 1000px;
-  }
+    h2 {
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      letter-spacing: 1px;
+    }
 
-  .card {
-    width: 300px;
-    border: 1px solid #ddd;
-    text-align: center; /* ✅ Center all text inside the card */
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  }
+    .card-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
 
-  .card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
 
-  .card-content {
-    padding: 15px;
-  }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+    }
 
-  .card h3 {
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #333;
-    margin: 10px 0;
-  }
+    .card-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px;
+    }
 
-  .card p {
-    font-size: 14px;
-    color: #666;
-    line-height: 1.5;
-    text-align: center; /* ✅ Paragraph text centered */
-  }
+    .card h3 {
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
 
-  .card button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-top: 15px;
-    background-color: #3c743f;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-  }
+    .card p {
+      flex-grow: 1;
+      font-size: 14px;
+      color: var(--text);
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
 
-  .card button:hover {
-    background-color: #2f5f32;
-  }
-</style>
+    .btn {
+      display: block;
+      background: var(--button-bg);
+      color: white;
+      padding: 12px 0;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 2px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: var(--button-hover);
+    }
+  </style>
 </head>
 <body>
+  <h2>Best-Loved Packages</h2>
 
-  <h2>BEST-LOVED PACKAGES</h2>
-
-  <div class="packages">
+  <div class="card-container">
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1588776814546-ef82de49d826" alt="Vietnamese Massage">
+      <img src="https://pbs.twimg.com/media/Fp1pmDlaEAAFN4I?format=jpg&name=large" alt="car">
       <div class="card-content">
         <h3>Traditional Vietnamese Massage</h3>
         <p>Indulge in our Traditional Vietnamese Massage, featuring light to medium pressure techniques designed for relaxation and stress relief.</p>
-        <button>BOOK NOW</button>
+        <a href="#" class="btn">Book Now</a>
       </div>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd47" alt="Couple Massage">
+      <img src="https://pbs.twimg.com/media/Fp1pmDlaEAAFN4I?format=jpg&name=large" alt="car">
       <div class="card-content">
         <h3>Couple Massage</h3>
         <p>Our Couple Massage provides a romantic and relaxing experience for two, with various types of massages to choose from.</p>
-        <button>BOOK NOW</button>
+        <a href="#" class="btn">Book Now</a>
       </div>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1588776814546-ef82de49d826" alt="Signature Massage">
+      <img src="https://pbs.twimg.com/media/Fp1pmDlaEAAFN4I?format=jpg&name=large" alt="car">
       <div class="card-content">
         <h3>The Riverside Signature Massage</h3>
         <p>Embark on an extraordinary sensory journey with our Riverside Spa Signature treatment, our best seller for deep relaxation.</p>
-        <button>BOOK NOW</button>
+        <a href="#" class="btn">Book Now</a>
       </div>
     </div>
   </div>
-
 </body>
 </html>
