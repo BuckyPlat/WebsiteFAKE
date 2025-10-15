@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Best-Loved Packages</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    background-color: #fff;
+  }
+
+  h2 {
+    margin-top: 30px;
+    letter-spacing: 1px;
+  }
+
+  .packages {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    max-width: 1000px;
+  }
+
+  .card {
+    width: 300px;
+    border: 1px solid #ddd;
+    text-align: center; /* ✅ Center all text inside the card */
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .card-content {
+    padding: 15px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #333;
+    margin: 10px 0;
+  }
+
+  .card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    text-align: center; /* ✅ Paragraph text centered */
+  }
+
+  .card button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #3c743f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .card button:hover {
+    background-color: #2f5f32;
+  }
+</style>
+</head>
+<body>
+
+  <h2>BEST-LOVED PACKAGES</h2>
+
+  <div class="packages">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1588776814546-ef82de49d826" alt="Vietnamese Massage">
+      <div class="card-content">
+        <h3>Traditional Vietnamese Massage</h3>
+        <p>Indulge in our Traditional Vietnamese Massage, featuring light to medium pressure techniques designed for relaxation and stress relief.</p>
+        <button>BOOK NOW</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd47" alt="Couple Massage">
+      <div class="card-content">
+        <h3>Couple Massage</h3>
+        <p>Our Couple Massage provides a romantic and relaxing experience for two, with various types of massages to choose from.</p>
+        <button>BOOK NOW</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1588776814546-ef82de49d826" alt="Signature Massage">
+      <div class="card-content">
+        <h3>The Riverside Signature Massage</h3>
+        <p>Embark on an extraordinary sensory journey with our Riverside Spa Signature treatment, our best seller for deep relaxation.</p>
+        <button>BOOK NOW</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
