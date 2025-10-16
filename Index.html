@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Consulting Specialists</title>
+  <title>Our Consulting Specialists</title>
 
   <!-- Font Awesome for icons -->
   <link
@@ -20,48 +20,73 @@
     }
 
     h2 {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 2em;
+      text-align: left;
+      margin: 40px 0 20px 80px;
+      font-size: 1.8em;
+      font-weight: 700;
     }
 
-    /* ====== Specialists Section ====== */
     .specialists {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
+      flex-wrap: wrap;
       gap: 20px;
-      padding: 40px 20px;
+      padding: 0 40px 60px;
     }
 
     .card {
       background: #fff;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      padding: 30px 25px;
+      border: 2px solid #e5e7eb;
       text-align: center;
+      padding: 25px 20px;
       width: 220px;
       transition: all 0.3s ease;
       cursor: pointer;
     }
 
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-    }
-
     .card i {
-      font-size: 36px;
+      font-size: 30px;
       margin-bottom: 15px;
       color: #2563eb;
       background: #e0edff;
       padding: 15px;
       border-radius: 50%;
+      transition: all 0.3s ease;
     }
 
+    .card h4 {
+      margin: 10px 0;
+      font-weight: 600;
+    }
+
+    .card p {
+      font-size: 0.9em;
+      color: #666;
+      line-height: 1.4em;
+    }
+
+    /* Hover: flat blue background */
+    .card:hover {
+      background: #2563eb;
+      color: #fff;
+      border-color: #2563eb;
+    }
+
+    .card:hover i {
+      color: #fff;
+      background: #1e40af;
+    }
+
+    .card:hover p {
+      color: #e0edff;
+    }
+
+    /* Optional active (pre-highlighted) */
     .card.active {
       background: #2563eb;
       color: #fff;
+      border-color: #2563eb;
     }
 
     .card.active i {
@@ -69,184 +94,39 @@
       background: #1e40af;
     }
 
-    /* ====== Why Choose Us ====== */
-    .choose-section {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 40px;
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 40px 20px;
-    }
-
-    .choose-section img {
-      width: 350px;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    }
-
-    .choose-text {
-      flex: 1;
-      min-width: 280px;
-    }
-
-    .choose-text h3 {
-      font-size: 1.8em;
-      margin-bottom: 20px;
-    }
-
-    .choose-text ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .choose-text ul li {
-      margin-bottom: 10px;
-    }
-
-    .choose-text ul li::before {
-      content: "✔️ ";
-      margin-right: 8px;
-    }
-
-    .choose-text a {
-      color: #2563eb;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .choose-text a:hover {
-      text-decoration: underline;
-    }
-
-    /* ====== Testimonials ====== */
-    .testimonials {
-      background: linear-gradient(to right, #edf2ff, #dbeafe);
-      padding: 50px 20px;
-      text-align: center;
-    }
-
-    .testimonials h2 span {
-      color: #2563eb;
-    }
-
-    .review-card {
-      background: #fff;
-      border-radius: 12px;
-      padding: 25px;
-      max-width: 500px;
-      margin: 30px auto;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      text-align: left;
-    }
-
-    .review-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 10px;
-    }
-
-    .review-header .name {
-      font-weight: bold;
-      color: #333;
-    }
-
-    .stars {
-      color: #fbbf24;
-    }
-
-    .review-footer {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 15px;
-      font-size: 0.9em;
-      color: #666;
-    }
-
-    .review-footer img {
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      margin-right: 5px;
-      border: 2px solid #fff;
+    .card.active p {
+      color: #e0edff;
     }
   </style>
 </head>
 
 <body>
-
-  <!-- ===== Specialists Section ===== -->
   <h2>Our Consulting Specialists</h2>
 
   <section class="specialists">
     <div class="card">
       <i class="fa-solid fa-virus-covid"></i>
       <h4>Covid-19 Test</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sem velit viverra amet faucibus.</p>
     </div>
 
     <div class="card active">
       <i class="fa-solid fa-heart-pulse"></i>
       <h4>Heart Lungs</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sem velit viverra amet faucibus.</p>
     </div>
 
     <div class="card">
       <i class="fa-solid fa-pills"></i>
       <h4>Supplements</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sem velit viverra amet faucibus.</p>
     </div>
 
     <div class="card">
       <i class="fa-solid fa-brain"></i>
       <h4>Mental Health</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sem velit viverra amet faucibus.</p>
     </div>
   </section>
-
-  <!-- ===== Why Choose Us Section ===== -->
-  <section class="choose-section">
-    <img src="https://i.imgur.com/4R4OphC.jpg" alt="Doctor image" />
-    <div class="choose-text">
-      <h3>Why You Choose Us?</h3>
-      <ul>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-      </ul>
-      <a href="#">Learn More →</a>
-    </div>
-  </section>
-
-  <!-- ===== Testimonials Section ===== -->
-  <section class="testimonials">
-    <h2>What <span>Our Member’s</span> Saying About Us</h2>
-
-    <div class="review-card">
-      <div class="review-header">
-        <div class="name">Jane Cooper</div>
-        <div class="stars">★★★★★</div>
-      </div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed cumque
-        pariatur nemo eveniet autem doloremque error! Amet facilis alias
-        laboriosam.
-      </p>
-    </div>
-
-    <div class="review-footer">
-      <img src="https://i.imgur.com/I80W1Q0.png" alt="user1" />
-      <img src="https://i.imgur.com/I80W1Q0.png" alt="user2" />
-      <img src="https://i.imgur.com/I80W1Q0.png" alt="user3" />
-      <img src="https://i.imgur.com/I80W1Q0.png" alt="user4" />
-      <span>100+ Reviews</span>
-    </div>
-  </section>
-
 </body>
 </html>
