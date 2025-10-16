@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Bảng giá vàng</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #fafafa;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 700px;
+      background-color: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    caption {
+      caption-side: top;
+      text-align: left;
+      font-weight: bold;
+      font-size: 18px;
+      color: #b71c1c;
+      padding: 10px 12px;
+    }
+
+    thead th {
+      background-color: #b71c1c;
+      color: white;
+      text-transform: uppercase;
+      padding: 12px;
+      font-weight: bold;
+      border: 1px solid #a00000;
+    }
+
+    tbody td {
+      padding: 10px 12px;
+      border: 1px solid #e0e0e0;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    .gold-name {
+      color: #333;
+    }
+
+    .price {
+      text-align: right;
+      font-weight: bold;
+      font-family: 'Courier New', monospace;
+      color: #2e7d32; /* green text for both columns */
+    }
+
+    .up {
+      color: #2e7d32;
+      font-size: 14px;
+      padding-left: 4px;
+    }
+
+    tr:hover td {
+      background-color: #fff5f5;
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+    <caption>Bảng giá vàng hôm nay</caption>
+    <thead>
+      <tr>
+        <th>Loại vàng</th>
+        <th>Mua vào</th>
+        <th>Bán ra</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="gold-name">Nhẫn ép vỉ Kim Gia Bảo</td>
+        <td class="price">13.790.000 <span class="up">↑</span></td>
+        <td class="price">14.060.000 <span class="up">↑</span></td>
+      </tr>
+      <tr>
+        <td class="gold-name">Vàng miếng SJC (Cty CP BTMH)</td>
+        <td class="price">14.000.000 <span class="up">↑</span></td>
+        <td class="price">14.180.000 <span class="up">↑</span></td>
+      </tr>
+      <tr>
+        <td class="gold-name">Nhẫn ép vỉ Vàng Rồng Thăng Long</td>
+        <td class="price">13.770.000 <span class="up">↑</span></td>
+        <td class="price">14.030.000 <span class="up">↑</span></td>
+      </tr>
+      <tr>
+        <td class="gold-name">Đồng vàng Kim Gia Bảo hoa sen</td>
+        <td class="price">13.790.000 <span class="up">↑</span></td>
+        <td class="price">14.060.000 <span class="up">↑</span></td>
+      </tr>
+      <tr>
+        <td class="gold-name">Vàng nữ trang 999.9</td>
+        <td class="price">13.670.000 <span class="up">↑</span></td>
+        <td class="price">13.920.000 <span class="up">↑</span></td>
+      </tr>
+      <tr>
+        <td class="gold-name">Vàng nữ trang 99.9</td>
+        <td class="price">13.660.000 <span class="up">↑</span></td>
+        <td class="price">13.910.000 <span class="up">↑</span></td>
+      </tr>
+      <tr>
+        <td class="gold-name">Tiểu Kim Cát - 0,3 chỉ</td>
+        <td class="price">4.137.000 <span class="up">↑</span></td>
+        <td class="price">4.218.000 <span class="up">↑</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>

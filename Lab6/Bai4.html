@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Bảng giá tiêu hôm nay</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f8f9fa;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 600px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    caption {
+      caption-side: top;
+      text-align: left;
+      font-weight: bold;
+      font-size: 18px;
+      color: #0d47a1;
+      padding: 10px 12px;
+    }
+
+    thead th {
+      background-color: #1565c0;
+      color: white;
+      padding: 12px 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      border: 1px solid #0d47a1;
+    }
+
+    tbody td {
+      padding: 10px 12px;
+      border: 1px solid #dce3f0;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #f0f6ff;
+    }
+
+    tbody tr:nth-child(odd) {
+      background-color: #ffffff;
+    }
+
+    tbody td:first-child {
+      text-align: left;
+      color: #1a237e;
+      font-weight: 500;
+    }
+
+    tbody td:nth-child(2),
+    tbody td:nth-child(3) {
+      text-align: right;
+      font-family: "Courier New", monospace;
+      font-weight: bold;
+      color: #0d47a1;
+    }
+
+    tr:hover td {
+      background-color: #e3f2fd;
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+    <caption>Bảng giá tiêu xuất khẩu</caption>
+    <thead>
+      <tr>
+        <th>Thị trường</th>
+        <th>USD/Tấn</th>
+        <th>VNĐ/Kg</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Indonesia - Black Pepper</td>
+        <td>7,101</td>
+        <td>187,950</td>
+      </tr>
+      <tr>
+        <td>Indonesia - White Pepper</td>
+        <td>10,062</td>
+        <td>266,322</td>
+      </tr>
+      <tr>
+        <td>Brazil Black - Pepper ASTA 570</td>
+        <td>6,600</td>
+        <td>174,689</td>
+      </tr>
+      <tr>
+        <td>Malaysia - Black Pepper ASTA</td>
+        <td>9,700</td>
+        <td>256,740</td>
+      </tr>
+      <tr>
+        <td>Malaysia - White Pepper ASTA</td>
+        <td>12,900</td>
+        <td>341,438</td>
+      </tr>
+      <tr>
+        <td>Viet Nam - Black Pepper 500 g/l</td>
+        <td>6,600</td>
+        <td>174,689</td>
+      </tr>
+      <tr>
+        <td>Viet Nam - Black Pepper 550 g/l</td>
+        <td>6,800</td>
+        <td>179,983</td>
+      </tr>
+      <tr>
+        <td>Viet Nam - White Pepper ASTA</td>
+        <td>9,250</td>
+        <td>244,829</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>

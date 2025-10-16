@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Lịch phát sóng VTV1 HD</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f7f9fb;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .schedule-container {
+      width: 700px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .header {
+      padding: 15px 20px;
+      font-size: 16px;
+      color: #007c91;
+      border-bottom: 2px solid #e0f2f1;
+    }
+
+    .header a {
+      color: #007c91;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    thead th {
+      background-color: #0097a7;
+      color: white;
+      padding: 10px;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    tbody td {
+      border-bottom: 1px solid #e0e0e0;
+      padding: 10px 12px;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #fafafa;
+    }
+
+    .time {
+      width: 80px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .current {
+      color: #e53935; /* red highlight for current show */
+    }
+
+    .program {
+      color: #333;
+      font-weight: 500;
+    }
+
+    tr:hover td {
+      background-color: #e0f7fa;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="schedule-container">
+    <div class="header">
+      KÊNH <a href="#">VTV1 [HD]</a> &nbsp;&nbsp; NGÀY <strong>08-10-2025 00:55</strong>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Thời gian</th>
+          <th>Chương trình</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="time current">13:45</td>
+          <td class="program">TỪ NHỮNG MIỀN QUÊ: NGÔI LÀNG CÀNG NẮNG CÀNG THƠM</td>
+        </tr>
+        <tr>
+          <td class="time">14:00</td>
+          <td class="program">GÓC NHÌN VĂN HÓA</td>
+        </tr>
+        <tr>
+          <td class="time">14:15</td>
+          <td class="program">GIAI ĐIỆU KẾT NỐI</td>
+        </tr>
+        <tr>
+          <td class="time">15:00</td>
+          <td class="program">VĂN HỌC NGHỆ THUẬT</td>
+        </tr>
+        <tr>
+          <td class="time">15:30</td>
+          <td class="program">KHÁT VỌNG PHÁT TRIỂN: MỘT MIỀN ĐẤT, MỘT KHÁT VỌNG</td>
+        </tr>
+        <tr>
+          <td class="time">16:00</td>
+          <td class="program">THỜI SỰ</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>

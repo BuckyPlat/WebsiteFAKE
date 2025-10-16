@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Lịch thi đấu</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f9f9f9;
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 700px;
+      background-color: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      border: 1px solid #e0e0e0;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+
+    caption {
+      caption-side: top;
+      font-weight: bold;
+      text-align: left;
+      background-color: #e0e0e0;
+      color: #333;
+      padding: 8px 12px;
+    }
+
+    .section-header {
+      background-color: #f4f4f4;
+      font-weight: bold;
+      color: #333;
+      text-align: left;
+      padding: 8px 12px;
+    }
+
+    .live {
+      color: #e53935;
+      font-weight: bold;
+    }
+
+    .time {
+      width: 90px;
+      font-weight: bold;
+    }
+
+    tr:hover td {
+      background-color: #fafafa;
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+    <thead>
+      <tr>
+        <th class="time">Thời gian</th>
+        <th colspan="2">Trận đấu</th>
+        <th>Trực tiếp</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <!-- Section 1 -->
+      <tr>
+        <td colspan="4" class="section-header">Bóng đá nữ VĐQG 2025 - lượt trận 9</td>
+      </tr>
+      <tr>
+        <td>08/10<br>15:30</td>
+        <td>TP Hồ Chí Minh I</td>
+        <td>Than Khoáng Sản VN</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>08/10<br>16:00</td>
+        <td>Thái Nguyên T&T</td>
+        <td>Phong Phú Hà Nam</td>
+        <td class="live">VFF, VFF Channel</td>
+      </tr>
+
+      <!-- Section 2 -->
+      <tr>
+        <td colspan="4" class="section-header">World Cup 2025 - 1/8</td>
+      </tr>
+      <tr>
+        <td>08/10<br>02:30</td>
+        <td>U20 Ukraine</td>
+        <td>U20 Tây Ban Nha</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>08/10<br>06:00</td>
+        <td>U20 Chile</td>
+        <td>U20 Mexico</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
