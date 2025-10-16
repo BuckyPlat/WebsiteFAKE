@@ -1,64 +1,87 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
     <title>NissanGlazer</title>
-    <link rel="stylesheet" href="Nissan.CSS">
-</head>
-<style>
-    
-</style>
-<body>
+    <link rel="stylesheet" href="Nissan.CSS" />
+  </head>
+  <body>
     <header></header>
+
     <nav>
-        <ul>
-            <li><a href="G1.html">Home</a></li>
-            <li>
-                <a href="#">About</a>
-                <ul class="submenu">
-                    <li><a href="Car.html">The car</a></li>
-                    <li><a href="Carrer.html">Career</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Services</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-        </ul>
+      <ul>
+        <li><a href="G1.html">Home</a></li>
+        <li>
+          <a href="#">About</a>
+          <ul class="submenu">
+            <li><a href="Car.html">The car</a></li>
+            <li><a href="Carrer.html">Career</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Services</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
     </nav>
+
     <div class="content">
-        <sidebar>
-        </sidebar>
-        <main>
-            <h1>FILL THE FORM TO CONTACT US</h1>
-            <div class="form-box">
-                <label>Your Name</label>
-                <input type="text" placeholder="Enter your name">
+      <sidebar></sidebar>
+      <main>
+        <h1>FILL THE FORM TO CONTACT US</h1>
+        <div class="form-box">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input
+              type="hidden"
+              name="access_key"
+              value="2d0e45a9-5779-4ae8-a308-83ef26ac641f"
+            />
 
-                <label>Your Surename</label>
-                <input type="text" placeholder="Enter your surename">
+            <label>Your Name</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
 
-                <label>Email</label>
-                <input type="email" placeholder="abc@gmail.com">
+            <label>Your Surname</label>
+            <input
+              type="text"
+              name="surname"
+              placeholder="Enter your surname"
+            />
 
-                <label>Phone number</label>
-                <input type="text" placeholder="09xx xxx xxx">
+            <label>Email</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="abc@gmail.com"
+              required
+            />
 
-                <label>Contact for:</label>
-                <select>
-                    <option>Works</option>
-                    <option>Co-operation</option>
-                    <option>Sponsor</option>
-                </select>
+            <label>Phone number</label>
+            <input type="text" name="phone" placeholder="09xx xxx xxx" />
 
-                <label>Details</label>
-                <textarea placeholder="Why you want to contant us?"></textarea>
+            <label>Contact for:</label>
+            <select name="subject">
+              <option>Works</option>
+              <option>Co-operation</option>
+              <option>Sponsor</option>
+            </select>
 
-                <button>Send</button>
-            </div>
-        </main>
-        <aside>
-        </aside>
+            <label>Details</label>
+            <textarea
+              name="message"
+              placeholder="Why you want to contact us?"
+              required
+            ></textarea>
+
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </main>
+      <aside></aside>
     </div>
-    <footer>
-    </footer>
-</body>
+
+    <footer></footer>
+  </body>
 </html>
