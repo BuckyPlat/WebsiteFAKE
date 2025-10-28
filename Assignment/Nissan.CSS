@@ -159,3 +159,85 @@ button:hover {
     color: #cd0000;
     background: white;
 }
+/* === CSS-ONLY SLIDESHOW (for inside <main>) === */
+.slideshow {
+  width: 100%;
+  max-width: 700px;
+  height: 400px;
+  margin: 20px auto;
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+  height: 100%;
+  animation: slideAnimation 12s infinite;
+}
+
+.slide {
+  width: 100%;
+  transition: 0.6s ease;
+}
+
+.slide img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Hide radio buttons */
+.slideshow input {
+  display: none;
+}
+
+/* Manual navigation dots */
+.navigation-manual {
+  position: absolute;
+  width: 100%;
+  bottom: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.manual-btn {
+  border: 2px solid #ffffff;
+  padding: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.manual-btn:hover {
+  background: #cd0000;
+}
+
+/* Manual control – stops animation and shows selected slide */
+#slide1:checked ~ .slides {
+  margin-left: 0%;
+  animation: none;
+}
+
+#slide2:checked ~ .slides {
+  margin-left: -100%;
+  animation: none;
+}
+
+#slide3:checked ~ .slides {
+  margin-left: -200%;
+  animation: none;
+}
+
+/* Auto-slide keyframe animation */
+@keyframes slideAnimation {
+  0% { margin-left: 0%; }
+  33% { margin-left: -100%; }
+  66% { margin-left: -200%; }
+  100% { margin-left: 0%; }
+}
+

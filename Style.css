@@ -1,0 +1,142 @@
+/* General */
+body {
+  scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
+}
+
+.section-title {
+  font-weight: 700;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #4f46e5;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Navbar */
+.navbar {
+  transition: all 0.3s ease;
+}
+.navbar-brand {
+  color: #111;
+}
+.nav-link {
+  color: #333 !important;
+  transition: 0.3s;
+}
+.nav-link:hover {
+  color: #4f46e5 !important;
+}
+
+/* Hero */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  padding-top: 120px;
+}
+.hero .btn {
+  border-radius: 50px;
+  transition: 0.3s;
+}
+.hero .btn:hover {
+  transform: translateY(-3px);
+}
+.stats span {
+  margin: 0 10px;
+  opacity: 0.9;
+}
+
+/* About */
+.about img {
+  transition: 0.4s;
+}
+.about img:hover {
+  transform: scale(1.03);
+}
+
+/* Course Content */
+.content-box {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+.content-box i {
+  font-size: 2rem;
+  color: #4f46e5;
+  margin-bottom: 15px;
+}
+.content-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+/* Benefits */
+.benefit-box {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+.benefit-box i {
+  font-size: 2rem;
+  color: #4f46e5;
+  margin-bottom: 15px;
+}
+.benefit-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+/* Instructor */
+.social-links a {
+  color: #4f46e5;
+  margin: 0 6px;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+.social-links a:hover {
+  color: #6a11cb;
+}
+
+/* Register */
+.register form input,
+.register form select {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+/* Footer */
+.footer .social-links a {
+  color: white;
+  margin: 0 8px;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+.footer .social-links a:hover {
+  color: #2575fc;
+}
+
+/* Subtle Fade-in Animation */
+section {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1s ease forwards;
+}
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

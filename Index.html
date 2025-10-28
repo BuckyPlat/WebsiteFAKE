@@ -1,132 +1,222 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Our Consulting Specialists</title>
-
-  <!-- Font Awesome for icons -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  />
-
-  <style>
-    body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      margin: 0;
-      background: #f9fbfd;
-      color: #333;
-    }
-
-    h2 {
-      text-align: left;
-      margin: 40px 0 20px 80px;
-      font-size: 1.8em;
-      font-weight: 700;
-    }
-
-    .specialists {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-      padding: 0 40px 60px;
-    }
-
-    .card {
-      background: #fff;
-      border-radius: 12px;
-      border: 2px solid #e5e7eb;
-      text-align: center;
-      padding: 25px 20px;
-      width: 220px;
-      transition: all 0.3s ease;
-      cursor: pointer;
-    }
-
-    .card i {
-      font-size: 30px;
-      margin-bottom: 15px;
-      color: #2563eb;
-      background: #e0edff;
-      padding: 15px;
-      border-radius: 50%;
-      transition: all 0.3s ease;
-    }
-
-    .card h4 {
-      margin: 10px 0;
-      font-weight: 600;
-    }
-
-    .card p {
-      font-size: 0.9em;
-      color: #666;
-      line-height: 1.4em;
-    }
-
-    /* Hover: flat blue background */
-    .card:hover {
-      background: #2563eb;
-      color: #fff;
-      border-color: #2563eb;
-    }
-
-    .card:hover i {
-      color: #fff;
-      background: #1e40af;
-    }
-
-    .card:hover p {
-      color: #e0edff;
-    }
-
-    /* Optional active (pre-highlighted) */
-    .card.active {
-      background: #2563eb;
-      color: #fff;
-      border-color: #2563eb;
-    }
-
-    .card.active i {
-      color: #fff;
-      background: #1e40af;
-    }
-
-    .card.active p {
-      color: #e0edff;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khóa Học Lập Trình Website | WebDev Academy</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <h2>Our Consulting Specialists</h2>
 
-  <section class="specialists">
-    <div class="card">
-      <i class="fa-solid fa-virus-covid"></i>
-      <h4>Covid-19 Test</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sem velit viverra amet faucibus.</p>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#"><i class="bi bi-code-slash"></i> WebDev Academy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">Giới Thiệu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Nội Dung</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Lợi Ích</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Giảng Viên</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    <div class="card active">
-      <i class="fa-solid fa-heart-pulse"></i>
-      <h4>Heart Lungs</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sem velit viverra amet faucibus.</p>
-    </div>
-
-    <div class="card">
-      <i class="fa-solid fa-pills"></i>
-      <h4>Supplements</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sem velit viverra amet faucibus.</p>
-    </div>
-
-    <div class="card">
-      <i class="fa-solid fa-brain"></i>
-      <h4>Mental Health</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sem velit viverra amet faucibus.</p>
+  <!-- Hero Section -->
+  <section class="hero d-flex align-items-center text-center text-white">
+    <div class="container">
+      <h1 class="fw-bold display-5">Khóa Học Lập Trình Website</h1>
+      <p class="lead mb-4">Học Bootstrap 5 từ cơ bản đến nâng cao. Xây dựng website responsive chuyên nghiệp chỉ trong 8 tuần!</p>
+      <div class="d-flex justify-content-center gap-3 mb-3">
+        <a href="#" class="btn btn-light px-4">Đăng Ký Ngay</a>
+        <a href="#" class="btn btn-outline-light px-4">Tìm Hiểu Thêm</a>
+      </div>
+      <div class="stats small">
+        <span><i class="bi bi-person"></i> 8 Tuần</span>
+        <span><i class="bi bi-people"></i> 500+ học viên</span>
+        <span><i class="bi bi-star-fill text-warning"></i> 4.9/5</span>
+      </div>
     </div>
   </section>
+
+  <!-- About Section -->
+  <section class="about py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Về Khóa Học</h2>
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" class="img-fluid rounded-4 shadow" alt="">
+        </div>
+        <div class="col-lg-6">
+          <h5 class="fw-bold mb-3">Tại Sao Nên Học Bootstrap?</h5>
+          <p>Bootstrap là framework CSS phổ biến nhất thế giới, giúp bạn xây dựng website responsive nhanh chóng và hiệu quả.</p>
+          <ul class="list-unstyled mt-3">
+            <li><i class="bi bi-check-circle-fill text-success"></i> Học từ cơ bản đến nâng cao</li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> Thực hành với dự án thực tế</li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> Hỗ trợ 24/7 từ giảng viên</li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> Cấp chứng chỉ khi hoàn thành</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Course Content -->
+  <section class="content py-5 bg-light text-center">
+    <div class="container">
+      <h2 class="section-title mb-5">Nội Dung Khóa Học</h2>
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="content-box">
+            <i class="bi bi-calendar2-week"></i>
+            <h5>Tuần 1-2</h5>
+            <p>Grid System, Typography, Colors, Utilities</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="content-box">
+            <i class="bi bi-layers"></i>
+            <h5>Tuần 3-4</h5>
+            <p>Buttons, Cards, Forms, Navigation, Modals</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="content-box">
+            <i class="bi bi-phone"></i>
+            <h5>Tuần 5-6</h5>
+            <p>Breakpoints, Flexbox, Responsive</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="content-box">
+            <i class="bi bi-rocket-takeoff"></i>
+            <h5>Tuần 7-8</h5>
+            <p>Xây dựng website hoàn chỉnh từ A-Z</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section class="benefits py-5 text-center">
+    <div class="container">
+      <h2 class="section-title mb-5">Lợi Ích Khi Tham Gia</h2>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="benefit-box">
+            <i class="bi bi-file-earmark-text"></i>
+            <h5>Tài Liệu Đầy Đủ</h5>
+            <p>Slides, video bài giảng, source code mẫu</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="benefit-box">
+            <i class="bi bi-people"></i>
+            <h5>Cộng Đồng</h5>
+            <p>Tham gia group học tập, trao đổi kinh nghiệm</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="benefit-box">
+            <i class="bi bi-award"></i>
+            <h5>Chứng Chỉ</h5>
+            <p>Nhận chứng chỉ hoàn thành khóa học</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="benefit-box">
+            <i class="bi bi-laptop"></i>
+            <h5>Học Mọi Lúc</h5>
+            <p>Truy cập khóa học mọi lúc, mọi nơi</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="benefit-box">
+            <i class="bi bi-headset"></i>
+            <h5>Hỗ Trợ 24/7</h5>
+            <p>Giảng viên sẵn sàng giải đáp thắc mắc</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="benefit-box">
+            <i class="bi bi-briefcase"></i>
+            <h5>Cơ Hội Việc Làm</h5>
+            <p>Kết nối với các công ty tuyển dụng</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instructor -->
+  <section class="instructor py-5 bg-light text-center">
+    <div class="container">
+      <h2 class="section-title mb-5">Giảng Viên</h2>
+      <div class="card mx-auto shadow-sm p-4 rounded-4" style="max-width: 500px;">
+        <div class="avatar bg-primary text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width:90px; height:90px; font-size:1.5rem;">
+          NA
+        </div>
+        <h5 class="fw-bold">Nguyễn Văn A</h5>
+        <p class="text-muted mb-2">Senior Web Developer</p>
+        <p>Hơn 10 năm kinh nghiệm trong lĩnh vực phát triển web. Đã đào tạo hơn 5000 học viên thành công.</p>
+        <div class="social-links">
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+          <a href="#"><i class="bi bi-github"></i></a>
+          <a href="#"><i class="bi bi-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Registration -->
+  <section class="register py-5 text-center">
+    <div class="container">
+      <div class="card p-5 mx-auto shadow rounded-4" style="max-width:600px;">
+        <h4 class="fw-bold mb-3">Đăng Ký Ngay</h4>
+        <p class="text-muted mb-4">Chỉ còn 20 suất cuối cùng!</p>
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Họ và Tên">
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Email">
+          </div>
+          <div class="mb-3">
+            <input type="tel" class="form-control" placeholder="Số Điện Thoại">
+          </div>
+          <div class="mb-3">
+            <select class="form-select">
+              <option>Chưa có kinh nghiệm</option>
+              <option>Đã học lập trình</option>
+              <option>Đã đi làm</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary w-100 py-2">Đăng Ký Ngay - 2.990.000đ</button>
+          <small class="text-muted d-block mt-2">Hoàn tiền 100% nếu không hài lòng</small>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer bg-dark text-white py-4">
+    <div class="container text-center small">
+      <div class="mb-2"><i class="bi bi-code-slash"></i> WebDev Academy</div>
+      <p class="mb-1">© 2025 WebDev Academy. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-youtube"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>

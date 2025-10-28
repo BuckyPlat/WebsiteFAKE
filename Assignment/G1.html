@@ -47,18 +47,29 @@
         <p class="author"><strong>By Vo Nhan Hong Phuc</strong></p>
         <p class="date"><em>Published: 7 October 2025 | 3 min read</em></p>
 
-        <img
-          src="https://tse3.mm.bing.net/th/id/OIP.rHsk8O5llnSP69C_w3Y5HAHaE7?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
-          alt="Nissan GT-R R32"
-          style="
-            width: 700px;
-            height: 450px;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-            display: block;
-            margin: auto;
-          "
-        />
+        <div class="slideshow">
+          <input type="radio" name="slide" id="slide1" checked />
+          <input type="radio" name="slide" id="slide2" />
+          <input type="radio" name="slide" id="slide3" />
+
+          <div class="slides">
+            <div class="slide s1">
+              <img src="GTR1.jpg" alt="Nissan GTR 1" />
+            </div>
+            <div class="slide">
+              <img src="GTR2.jpg" alt="Nissan GTR 2" />
+            </div>
+            <div class="slide">
+              <img src="GTR3.jpg" alt="Nissan GTR 3" />
+            </div>
+          </div>
+
+          <div class="navigation-manual">
+            <label for="slide1" class="manual-btn"></label>
+            <label for="slide2" class="manual-btn"></label>
+            <label for="slide3" class="manual-btn"></label>
+          </div>
+        </div>
 
         <p>
           In 1989, Nissan introduced a car that would forever change the world
