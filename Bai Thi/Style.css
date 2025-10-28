@@ -1,0 +1,303 @@
+/* FONT + RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background: #f2f5f0;
+    color: #333;
+}
+
+/* ============= HEADER ============= */
+header {
+    background: #093b18;
+    color: white;
+    padding: 12px 0;
+}
+
+.header {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    opacity: .7;
+}
+
+/* ============= FEATURE AREA ============= */
+.feature {
+    width: 85%;
+    margin: 40px auto;
+    text-align: left;
+}
+
+.feature h3 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+.feature > div {
+    display: inline-block;
+    width: 31%;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 2%;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    position: relative;
+    transition: .2s;
+}
+
+.feature > div:hover {
+    transform: translateY(-5px);
+}
+
+.feature img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.feature h4 {
+    padding: 10px 15px 0;
+    font-size: 17px;
+}
+
+.feature p {
+    padding: 3px 15px;
+    font-weight: bold;
+    color: #e60000;
+}
+
+.feature button {
+    width: 90%;
+    margin: 8px 5%;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    background: #0b561d;
+    color: white;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.feature button:hover {
+    opacity: 0.85;
+}
+
+/* ================= PRICING TABLE ================= */
+.pricing-table {
+    width: 85%;
+    margin: 40px auto;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 25px 30px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+}
+
+.pricing-table h3 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: #222;
+}
+
+/* Container để tạo overflow đẹp khi nhỏ */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Table styling */
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+.table-container th {
+    background: #0b561d;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 14px 10px;
+    text-align: left;
+    border: none;
+    font-size: 15px;
+}
+
+.table-container td {
+    padding: 13px 10px;
+    border-bottom: 1px solid #e6e6e6;
+    color: #444;
+}
+
+/* Tình trạng màu xanh như hình */
+.table-container td:nth-child(3) {
+    font-weight: 600;
+    color: #0b561d;
+}
+
+/* Striping hover row */
+.table-container tr:hover td {
+    background: #f7faf7;
+}
+
+/* Mobile tweak */
+@media (max-width: 768px) {
+    .pricing-table {
+        width: 92%;
+        padding: 20px;
+    }
+    
+    .table-container th, 
+    .table-container td {
+        font-size: 14px;
+    }
+}
+
+
+/* ================= FORM ================= */
+.Form {
+    width: 100%;
+    margin: 40px 0;
+}
+
+.Form h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.form-box {
+    width: 85%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+}
+
+.form-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-box input,
+.form-box select,
+.form-box textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+.form-box textarea {
+    height: 110px;
+}
+
+.form-box button {
+    width: 160px;
+    margin-top: 10px;
+    background: #0b561d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+/* ================= MAP ================= */
+.Location iframe {
+    width: 85%;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.25);
+}
+
+/* ================= CONTACT ================= */
+.Contact {
+    background: white;
+    width: 85%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+    margin-bottom: 60px;
+}
+
+.Contact h3 {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    text-align: left;
+}
+
+.contact-box h4 {
+    font-size: 17px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #0b561d; /* xanh header */
+}
+
+.contact-box p {
+    font-size: 15px;
+    color: #333;
+    line-height: 1.5;
+}
+
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 768px) {
+    .feature > div {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Location iframe {
+        width: 100%;
+    }
+
+    .form-box,
+    .Contact,
+    .pricing-table {
+        width: 95%;
+    }
+}

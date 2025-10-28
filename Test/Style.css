@@ -1,25 +1,110 @@
 body {
-  background-color: #fff9ed;
+  font-family: Arial;
+  margin: 0;
+  background: #f5f5f5;
 }
 
-/* Navbar hover dropdown */
-.navbar .nav-item.dropdown:hover .dropdown-menu {
-  display: block;
-  margin-top: 0;
+/* HEADER */
+.top {
+  background: #144c16;
+  padding: 10px;
+  text-align: center;
+  color: white;
 }
 
-/* Hover effects */
-.btn-hover {
-  transition: all 0.3s ease;
-}
-.btn-hover:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+.menu a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-/* Card hover */
-.card:hover {
-  transform: translateY(-5px);
-  transition: all 0.3s ease;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+.menu a:hover {
+  background: #ffc300;
+  color: black;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+/* TITLES */
+.title {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* FEATURED PRODUCTS */
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  width: 240px;
+  background: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: 0 0 5px gray;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.price {
+  color: red;
+  font-weight: bold;
+}
+
+/* BUTTONS */
+.btn {
+  background: green;
+  border: none;
+  padding: 8px 10px;
+  color: white;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background: #ffc300;
+  color: black;
+}
+
+/* TABLE */
+.price {
+  width: 80%;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+.price th, .price td {
+  border: 1px solid gray;
+  padding: 10px;
+}
+
+/* FORM */
+.form {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form input, .form select, .form textarea {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid gray;
+}
+
+/* FOOTER */
+.foot {
+  background: #144c16;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
 }
