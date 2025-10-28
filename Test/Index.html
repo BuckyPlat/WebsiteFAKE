@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thu Mua Sầu Riêng</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-warning-subtle py-3 shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-success" href="#">
+        <i class="bi bi-emoji-laughing-fill me-2"></i>Thu Mua Sầu Riêng
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button">Báo giá</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Hôm nay</a></li>
+              <li><a class="dropdown-item" href="#">Tuần này</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button">Loại sầu riêng</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Ri6</a></li>
+              <li><a class="dropdown-item" href="#">Monthong</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
+          <li class="nav-item">
+            <a href="#" class="btn btn-warning fw-bold ms-3">Đặt lịch thu mua</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Products -->
+  <section class="container py-5">
+    <h3 class="fw-bold text-warning mb-3">Sản phẩm</h3>
+    <p>Demo 3 mặt hàng có hình minh họa (placeholder online).</p>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="https://picsum.photos/400/250?1" class="card-img-top" alt="SP A">
+          <div class="card-body">
+            <h6 class="fw-bold">SP A – Mô tả ngắn</h6>
+            <p class="text-danger fw-bold">129.000đ</p>
+            <button class="btn btn-warning btn-hover"><i class="bi bi-cart-plus"></i> Thêm vào đơn</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="https://picsum.photos/400/250?2" class="card-img-top" alt="SP B">
+          <div class="card-body">
+            <h6 class="fw-bold">SP B – Mô tả ngắn</h6>
+            <p class="text-danger fw-bold">159.000đ</p>
+            <button class="btn btn-warning btn-hover"><i class="bi bi-cart-plus"></i> Thêm vào đơn</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="https://picsum.photos/400/250?3" class="card-img-top" alt="SP C">
+          <div class="card-body">
+            <h6 class="fw-bold">SP C – Mô tả ngắn</h6>
+            <p class="text-danger fw-bold">199.000đ</p>
+            <button class="btn btn-warning btn-hover"><i class="bi bi-cart-plus"></i> Thêm vào đơn</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Price Table -->
+  <section class="container mb-5">
+    <h3 class="fw-bold text-warning mb-3">Bảng giá</h3>
+    <table class="table table-bordered align-middle bg-light">
+      <thead class="table-warning">
+        <tr>
+          <th>Sản phẩm</th>
+          <th>Đơn vị</th>
+          <th>Giá</th>
+          <th>Tình trạng</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>SP A</td><td>1 kg</td><td>129.000đ</td><td><span class="badge bg-success">Còn</span></td></tr>
+        <tr><td>SP B</td><td>1 kg</td><td>159.000đ</td><td><span class="badge bg-success">Còn</span></td></tr>
+        <tr><td>SP C</td><td>1 kg</td><td>199.000đ</td><td><span class="badge bg-warning text-dark">Ít</span></td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Order Form -->
+  <section class="container mb-5">
+    <h3 class="fw-bold text-warning mb-3">Đặt hàng nhanh</h3>
+    <form class="p-4 bg-light rounded shadow-sm">
+      <div class="row g-3 mb-3">
+        <div class="col-md-3">
+          <label class="form-label">Họ và tên</label>
+          <input type="text" class="form-control" placeholder="Nguyễn Văn A">
+        </div>
+        <div class="col-md-3">
+          <label class="form-label">Số điện thoại</label>
+          <input type="tel" class="form-control" placeholder="09xx xxx xxx">
+        </div>
+        <div class="col-md-3">
+          <label class="form-label">Chọn sản phẩm</label>
+          <select class="form-select">
+            <option>SP A</option>
+            <option>SP B</option>
+            <option>SP C</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label class="form-label">Số lượng</label>
+          <input type="number" class="form-control" min="1" value="1">
+        </div>
+      </div>
+      <div class="mb-3">
+        <textarea class="form-control" rows="3" placeholder="Giao giờ hành chính, không gọi trước..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-warning btn-hover"><i class="bi bi-send"></i> Gửi đơn</button>
+      <button type="button" class="btn btn-outline-warning btn-hover ms-2">Xem thêm sản phẩm</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 text-muted small">
+    © 2025 Mini Shop - Bài tập giao diện: Menu 2 cấp - Sản phẩm (ảnh) - Bảng giá - Form
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
